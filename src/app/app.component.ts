@@ -11,7 +11,8 @@ export class AppComponent {
   ShowForm = false;
   ShowButton = true;
   ShowNoRecipes = true;
-  recipeName : string = '';
+  recipeName : string = 'Tofu Scramble Tacos';
+  recipeInstruction : string = '1. Heat skillet';
   recipeInstructions: string[] = [];
 
   showForm() {
