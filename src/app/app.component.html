@@ -6,7 +6,6 @@
   {{recipeInstructions|json}}
   <br>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
-  <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button>
 
   <form *ngIf="ShowForm">
         <label>recipe-name </label>
@@ -25,6 +24,8 @@
   </form>
   <br>
   <!-- <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button> -->
-  <button (click)="addRecipeName()" type="submit">Submit</button>
+  <!-- <button (click)="addRecipeName()" type="submit">Submit</button> -->
+  <button (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button>
+
 </div>
  
