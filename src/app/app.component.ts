@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pa-starter-angular';
+  ShowForm = false;
+  ShowButton = true;
+  ShowNoRecipes = true;
+  recipeName : string = '';
+  recipeInstructions: string[] = [];
+
+  showForm() {
+    this.ShowForm = !this.ShowForm;
+    this.ShowButton = !this.ShowButton;
+  }
+
+  addRecipeName(){
+    this.recipeInstructions.push(this.recipeName);
+      //Reset input
+      this.recipeName = '';
+      this.ShowNoRecipes = false;
+  }
 }
