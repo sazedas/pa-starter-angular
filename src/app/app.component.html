@@ -5,7 +5,7 @@
   <h1>My Recipes</h1>
   {{recipeInstructions|json}}
   <br>
-  <h2 *ngIf="ShowNoRecipes">There are no recipes to list</h2>
+  <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
   <form *ngIf="ShowForm">
         <label>recipe-name </label>
         <input type="text"
