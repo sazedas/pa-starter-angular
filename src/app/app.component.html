@@ -3,24 +3,26 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
-  {{recipeInstructions|json}}
+  {{recipeInstructionAll|json}}
   <br>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
 
-  <form *ngIf="ShowForm">
-        <label>recipe-name</label>
+  <form *ngIf="ShowForm">        
         <input type="text"
-        name="recipe-name"
-        id="recipe-name"
+        name="recipe-name"        
         class="form-control"
         [(ngModel)]="recipeName"
+        id="recipe-name"
         >
-      <br>
-        <label>recipe-instructions</label>
+        <label for="recipe-name">recipe-name</label>
+
+      <br>       
+
         <input type="text"
-        name="recipe-instructions"
-        id="recipe-instructions"
+        name="recipe-instructions" 
+        id="recipe-instructions"             
         >
+      <label for="recipe-instructions">recipe-instructions</label>
   </form>
   <br>
   <!-- <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button> -->

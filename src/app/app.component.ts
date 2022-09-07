@@ -12,8 +12,8 @@ export class AppComponent {
   ShowButton = true;
   ShowNoRecipes = true;
   recipeName : string = 'Tofu Scramble Tacos';
-  recipeInstruction : string = '1. Heat skillet';
-  recipeInstructions: string[] = [];
+  recipeInstructions : string = '1. Heat skillet';
+  recipeInstructionAll: string[] = [];
 
   showForm() {
     this.ShowForm = !this.ShowForm;
@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   addRecipeName(){
-    this.recipeInstructions.push(this.recipeName);
+    this.recipeInstructionAll.push(this.recipeName);
       //Reset input
       this.recipeName = '';
       this.ShowNoRecipes = false;
