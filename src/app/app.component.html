@@ -7,7 +7,7 @@
   <br>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
 
-  <button name="add recipe" (click)="showForm()" type="submit">add recipe</button>
+  <button name="add recipe" (click)="showForm()" (click)="addRecipeName()" type="submit">add recipe</button>
 
   <form *ngIf="ShowForm">        
         <input type="text"
@@ -30,7 +30,7 @@
   <!-- <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button> -->
   <!-- <button (click)="addRecipeName()" type="submit">Submit</button> -->
   <!-- <button (click)="addRecipeName()" type="submit">Submit</button> --> 
-  <button type="submit" (click)="addRecipeName()" value="Submit">Submit</button>
+  <!-- <button type="submit" (click)="addRecipeName()" value="Submit">Submit</button> -->
 
 </div>
  
