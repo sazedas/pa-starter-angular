@@ -15,6 +15,10 @@ export class AppComponent {
   recipeInstructions : string = '1. Heat skillet';
   recipeInstructionAll: string[] = [];
 
+  ngOnInIt(): void{
+    this.showForm();
+  }
+
   showForm() {
     this.ShowForm = !this.ShowForm;
     this.ShowButton = !this.ShowButton;
