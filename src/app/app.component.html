@@ -3,7 +3,7 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
-  <button (click)="showForm()" type="submit" name="Add Recipe">Add Recipe</button>
+  <button (click)="form()" type="submit" name="Add Recipe" (click)="addRecipeName()">Add Recipe</button>
   <br>
   {{recipeInstructionAll|json}}
   <br>

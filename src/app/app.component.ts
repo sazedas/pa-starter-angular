@@ -11,11 +11,11 @@ export class AppComponent {
   ShowForm = false;
   ShowButton = true;
   ShowNoRecipes = true;
-  recipeName : string = '';
+  recipeName : string = 'Tofu Scramble Tacos';
   recipeInstructions : string = '1. Heat skillet';
   recipeInstructionAll: string[] = [];
 
-  showForm() {
+  form() {
     this.ShowForm = !this.ShowForm;
     this.ShowButton = !this.ShowButton;
   }
