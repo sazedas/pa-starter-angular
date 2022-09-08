@@ -3,7 +3,7 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
-  <button (click)="form()" type="submit" name="Add Recipe" (click)="addRecipeName()">Add Recipe</button>
+  <button (click)="showForm()" type="submit" name="Add Recipe" (click)="addRecipeName()">Add Recipe</button>
   <br>
   {{recipeInstructionAll|json}}
   <br>
@@ -11,7 +11,7 @@
 
   
 
-  <form name="form" id="form" *ngIf="ShowForm">        
+  <form data-cy="form" name="form" id="form" *ngIf="ShowForm">        
         <input type="text"
         name="recipe-name"        
         class="form-control"
