@@ -3,19 +3,15 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
-  <ul>
-    <li name="recipe-name" id="recipe-name" name="1. Heat skillet">Tofu Scramble Tacos</li>
-  </ul>
   <button (click)="form()" type="submit" name="Add Recipe" (click)="addRecipeName()">Add Recipe</button>
   <br>
-  
-  <!-- {{recipeInstructionAll|json}} -->
+  {{recipeInstructionAll|json}}
   <br>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
 
   
 
-  <form name="form" id="form" *ngIf="ShowForm" name="Add Recipe">        
+  <form name="form" id="form" *ngIf="ShowForm">        
         <input type="text"
         name="recipe-name"        
         class="form-control"
