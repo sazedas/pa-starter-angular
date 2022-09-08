@@ -3,7 +3,7 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
-  <button (click)="showForm()" type="submit" name="Add Recipe">Add Recipe</button>
+  <button (click)="showForm()" type="submit" name="Add Recipe" *ngIf="ShowButton">Add Recipe</button>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
 
   <form name="form" id="form">        
@@ -28,7 +28,7 @@
   <!-- <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button> -->
   <!-- <button (click)="addRecipeName()" type="submit">Submit</button> -->
   <!-- <button (click)="addRecipeName()" type="submit">Submit</button> --> 
-  <input type="submit" (click)="addRecipeName()" value="Submit">Submit</type>
+  <input type="submit" (click)="addRecipeName()" value="Submit">
 
 </div>
  
