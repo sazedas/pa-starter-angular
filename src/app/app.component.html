@@ -27,7 +27,9 @@
   <br>
   <!-- <button *ngIf="ShowButton" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button> -->
   <!-- <button (click)="addRecipeName()" type="submit">Submit</button> -->
-  <button name="Add Recipe" (click)="showForm()" (click)="addRecipeName()" type="submit">Add Recipe</button>
+  <button name="Add Recipe" (click)="showForm()" *ngIf="ShowButton" type="submit">Add Recipe</button>
+  <button (click)="addRecipeName()" type="submit">Submit</button> -->
+  <input type="submit" value="Submit">
 
 </div>
  
