@@ -3,11 +3,13 @@
   <!-- ^ Do not remove this element ^ -->
 
   <h1>My Recipes</h1>
+  <button name="add recipe" (click)="showForm()" (click)="addRecipeName()" type="submit">add recipe</button>
+  <br>
   {{recipeInstructionAll|json}}
   <br>
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
 
-  <button name="add recipe" (click)="showForm()" (click)="addRecipeName()" type="submit">add recipe</button>
+  
 
   <form *ngIf="ShowForm">        
         <input type="text"
