@@ -15,7 +15,7 @@ export class AppComponent {
   recipeInstructions : string = '1. Heat skillet';
   recipeInstructionAll: string[] = [];
 
-  form() {
+  showForm() {
     this.ShowForm = !this.ShowForm;
     this.ShowButton = !this.ShowButton;
   }
