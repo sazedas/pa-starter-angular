@@ -10,9 +10,10 @@ export class AppComponent {
   title = 'pa-starter-angular';
   ShowForm = false;
   ShowButton = true;
+  ShowSubmitButton = false;
   ShowNoRecipes = true;
-  recipeName : string = 'Tofu Scramble Tacos';
-  recipeInstructions : string = '1. Heat skillet';
+  recipeName = "";
+  recipeInstructions = "";
   recipeInstructionAll: string[] = [];
 
   ngOnInIt(): void{
@@ -22,6 +23,7 @@ export class AppComponent {
   showForm() {
     this.ShowForm = !this.ShowForm;
     this.ShowButton = !this.ShowButton;
+    this.ShowSubmitButton = !this.ShowSubmitButton;
   }
 
   addRecipeName(){
