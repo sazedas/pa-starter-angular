@@ -4,11 +4,11 @@
 
   <h1>My Recipes</h1> 
   <p *ngIf="ShowNoRecipes">There are no recipes to list</p>
-  <button *ngIf="ShowButton" (click)="showForm()" type="submit" name="Add Recipe">Add Recipe</button>
+  <button role="button" *ngIf="ShowButton" (click)="showForm()" type="submit" name="Add Recipe">Add Recipe</button>
   <br>
 
-  <form  *ngIf="ShowForm" name="form" id="form">        
-    <label for="recipe-name">recipe-naame</label>    
+  <form role="form" *ngIf="ShowForm" name="form" id="form">        
+    <label for="recipe-name">recipe-name</label>    
     <input type="text"
         name="recipe-name"        
         class="form-control"
